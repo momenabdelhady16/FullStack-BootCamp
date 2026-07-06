@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Developer Ecosystem Admissions">
+        <title>Developer Ecosystem Addmissions</title> 
+    </head>
+    <body>
+
+        <header>
+            <h1>Welcome in our FullStack-BootCamp </h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#form">The Ultimate Form</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+        <main>
+            <section id="intro">
+                <div>
+                    <figure>
+                        <video  controls width="500"
+                                aria-label="Introductory video explaining why programming is important">
+                        <source src="why-programming-is-important.mp4" type="video/mp4" >
+                        This is an introduction video, your browser does not support the video tag.
+                        </video>
+                        <figcaption>Introductory video explaining why programming is important</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <audio  controls 
+                                aria-label="Introductory audio about our bootcamp">
+                            <source src="welcome-in-bootcamp.mp3" type="audio/mpeg">
+                        </audio>
+                        <figcaption>Introdutory audio about our bootcamp</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54837.47703147941!2d31.040470519428986!3d30.79303331293368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c95daafcf035%3A0x7421820c5e8cae42!2z2LfZhti32KfYjCDYt9mG2LfYpyAo2YLYs9mFIDIp2Iwg2YXYsdmD2LIg2LfZhti32KfYjCDZhdit2KfZgdi42Kkg2KfZhNi62LHYqNmK2Kk!5e0!3m2!1sar!2seg!4v1783329770582!5m2!1sar!2seg" 
+                                title="Our location"
+                                width="300" 
+                                height="200" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+                        <figcaption>Our location</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <hr>
+
+            <section id="form">
+                <h2>Here is  the form, Join Us.</h2>
+                <form action="http://127.0.0.1:5500/" method="POST">
+                    <fieldset>
+                        <legend>Basic Information</legend>
+                        <label for="email">Enter email: </label>
+                        <input id="email" name="email" type="email" placeholder="Email" required>
+                        <br>
+
+                        <label for="username">Username: </label>
+                        <input id="username" name="username" type="text" placeholder="Username" required>
+                        <br>
+
+                        <label for="password">Enter password</label>
+                        <input id="password" name="password" type="password" placeholder="password" required>
+                        <br>
+
+                        <label for="birthday">Enter Birthday: </label>
+                        <input id="birthday" name="birthday" type="date">
+                        <br>
+
+                        <label for="country">Select your country: </label>
+                        <select id="country" name="country" required>
+                            <option value="" disabled selected>Choose your country</option>
+                            
+                            <option value="Egypt">Egypt</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Palestine">Palestine</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Libya">Libya</option>
+                            <option value="Morocco">Morocco</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Syria">Syria</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Yemen">Yemen</option>
+
+                            <option value="Argentina">Argentina</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Canada">Canada</option>
+                            <option value="China">China</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Greece">Greece</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="South Korea">South Korea</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                        </select>
+                        <br>
+
+                        <label for="fv-color">Favorate color: </label>
+                        <input id="fv-color" name="color" type="color">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>What is your programming level</legend>
+                        
+                        <label for="interview-date">Suitible interview date:</label>
+                        <input type="date" name="interview-date" id="interview-date">
+                        <br>
+
+                        <label for="track">Choose a track:</label>
+                        <select name="track" id="track" required>
+                            <option value="" selected disabled>Choose Your Track</option>
+                            <option value="frontend">Front-End</option>
+                            <option value="backend">Back-End</option>
+                        </select>
+
+                        <div>
+                            <p id="langs-title">Which languages have you learned?</p>
+                            
+                            <div role="group" aria-labelledby="langs-title">
+                                <input type="checkbox" name="langs" id="html" value="html">
+                                <label for="html">HTML</label>
+                                <br>
+
+                                <input type="checkbox" name="langs" id="css" value="css">
+                                <label for="css">CSS</label>
+                                <br>
+
+                                <input type="checkbox" name="langs" id="js" value="js">
+                                <label for="js">JavaScript</label>
+                            </div>
+                        </div>
+
+                        <label for="evaluation-level">Evaluation Level</label>
+                        <input type="range" name="evaluation-level" id="evaluation-level" min="1" max="10" step="1" value="7">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Technical Profile</legend>
+
+                        <label for="prev-langs">What is your previous languages you have learned</label>
+                        <input list="prev-langs-list" name="prev-langs" id="prev-langs" placeholder="Type to search...">
+                        <datalist id="prev-langs-list">
+                            <option value="C">C</option>
+                            <option value="C++">C++</option>
+                            <option value="Python">Python</option>
+                            <option value="Perl">Perl</option>
+                            <option value="Java">Java</option>
+                        </datalist>
+                        <br>
+
+                        <label for="upload-cv">Upload Your CV: </label>
+                        <input type="file" name="cv" id="upload-cv">
+                        <br>
+
+                        <label for="github">Your Github URL: </label>
+                        <input type="url" id="github" name="github" placeholder="github url..." required>
+                        <br>
+
+                        <label for="why">Why are you excited to join us?</label>
+                        <br>
+                        <textarea name="why-excited" id="why" cols="80" rows="5" placeholder="write here..."></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Confirm and Pay</legend>
+                        <label for="cost">Cost</label>
+                        <input type="text" value="5000" name="cost" id="cost" readonly>
+                        <br>
+
+                        <label for="coupon">Coupon</label>
+                        <input type="text" name="coupon" id="coupon" disabled placeholder="Coupon Here">
+
+                        <input type="submit" name="submit" id="submit">
+                        <input type="reset" name="reset" id="reset">
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <section id="contact">
+                <h3>Contact Us:</h3>
+                <a href="https://www.github.com/momenabdelhady16" target="_blank">
+                    <img src="github.svg" alt="github" width="50">
+                </a>
+                <a href="mailto:momen.abdelhady16@gmail.com" target="_blank">
+                    <img src="gmail.svg" alt="gmail" width="50">
+                </a>
+            </section>
+            <small>&copy; 2026 Momen Taha &mdash; FullStack-BootCamp  </small>
+        </footer>
+    </body>
+</html>
