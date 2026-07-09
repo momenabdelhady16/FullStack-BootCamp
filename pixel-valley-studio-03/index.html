@@ -3,134 +3,151 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Pixel Valley Studio" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <title>Pixel Valley Studio</title>
     </head>
 
     <body>
         <!-- here is the header of the page -->
         <header>
-            <h1>Pixel Valley Studio</h1>
+            <h1 class="header-1">Pixel Valley Studio</h1>
+            <!-- here is the navigation bar -->
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#main">Home</a></li>
+                    <li><a href="#rev">Reviews</a></li>
+                    <li><a href="#req">Requirements</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <hr>
+            </nav>
         </header>
-        <!-- here is the navigation bar -->
-        <nav>
-            <ul>
-                <li><a href="#main">Home</a></li>
-                <li><a href="#rev">Reviews</a></li>
-                <li><a href="#req">Requirements</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-            <hr>
-        </nav>
+
         <!-- here is the main area of the page -->
         <main id="main">
             <section>
-                <article name="review" id="rev">
-                    <h2>Developer's Journey</h2>
-                    <p>
+                <article id="rev">
+                    <h2 class="header-2">Developer's Journey</h2>
+                    <p class="par">
                         <strong>Game Description:</strong>
                         <br>
                         Developer's Journey is a unique RPG experience that relies entirely on logical and programming puzzles. The game takes place inside a giant motherboard, where the player acts as a systems engineer trying to fix corrupted codes and fight viruses to reach the main processor.
                     </p>
-                    <br>
-                    <p>
+                    <p class="par">
                         <strong>Audio Design:</strong>
                         <br>
                         To enhance focus, the game is completely devoid of music, relying instead on ambient white noise and developer voiceovers, with precise mechanical sound effects when interacting with system components.
                     </p>
-                    <br>
                     <section>
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" alt="Motherboard inside a computer." width="500" height="250"> 
-                        <br>
-                        <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" frameborder="1" width="500" height="280" allowfullscreen ></iframe>
-                        <br>
-                        <audio controls>
+                        <iframe class="video" src="https://www.youtube.com/embed/jNQXAC9IVRw" allowfullscreen ></iframe>
+                        <img class="image" src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" alt="Motherboard inside a computer." width="500" height="250"> 
+                        <audio controls class="audio">
                             <source src="https://cdn.freesound.org/previews/676/676588_13432509-lq.ogg" type="audio/ogg">
                         </audio>
                     </section>
-                    <br>
-                    <table id="req" border="1">
-                        <caption>System Requirements</caption>
-                        <thead>
-                            <tr>
-                                <th>Hardware</th>
-                                <th>Minimum</th>
-                                <th>Recommended</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>OS</th>
-                                <td>Ubuntu 20.04 LTS</td>
-                                <td>Ubuntu 24.04 LTS</td>
-                            </tr>
-                            <tr>
-                                <th>CPU</th>
-                                <td>Intel Core i3</td>
-                                <td>Intel Core i5</td>
-                            </tr>
-                            <tr>
-                                <th>RAM</th>
-                                <td>4 GB</td>
-                                <td>8 GB</td>
-                            </tr>
-                            <tr>
-                                <th>Storage</th>
-                                <td>10 GB HDD</td>
-                                <td>10 GB SSD</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <br>
+
+                    <div class="tb-container">
+                        <table id="req" class="table">
+                            <caption class="tb-caption">System Requirements</caption>
+                            <thead class="thead">
+                                <tr>
+                                    <th>Hardware</th>
+                                    <th>Minimum</th>
+                                    <th>Recommended</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>OS</th>
+                                    <td>Ubuntu 20.04 LTS</td>
+                                    <td>Ubuntu 24.04 LTS</td>
+                                </tr>
+                                <tr>
+                                    <th>CPU</th>
+                                    <td>Intel Core i3</td>
+                                    <td>Intel Core i5</td>
+                                </tr>
+                                <tr>
+                                    <th>RAM</th>
+                                    <td>4 GB</td>
+                                    <td>8 GB</td>
+                                </tr>
+                                <tr>
+                                    <th>Storage</th>
+                                    <td>10 GB HDD</td>
+                                    <td>10 GB SSD</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </article>
                 <aside>
-                    <form action="" method="post">
-                        <label for="name">Enter your name</label>
-                        <input type="text" name="name" id="name" placeholder="enter your name" required>
-                        <br>
-                        <label for="e-mail">E-mail</label>
-                        <input type="email" name="email" id="e-mail">
-                        <br>
-                        <label>Rating:</label>
-                        <input type="radio" name="radio-opt" id="excellent" value="excellent"><label for="excellent">Excellent.</label>
-                        <input type="radio" name="radio-opt" id="good" value="good"><label for="good">Good.</label>
-                        <input type="radio" name="radio-opt" id="not-good" value="not-good"><label for="not-good">Needs improvements.</label>
-                        <br>
-                        <label for="specialty-list">Specialty:</label>
-                        <input 
-                            list="specialty" 
-                            name="specialty-list" 
-                            id="specialty-list"
-                            placeholder="write your specialty"
-                        >
-                        <datalist id="specialty">
-                            <option value="Front-End Developer">Front-End Developer.</option>
-                            <option value="Mechatronics Engineer">Mechatronics Engineer.</option>
-                            <option value="System Designer">System Designer.</option>
-                        </datalist>
-                        <br>
-                        <label for="comment">Write your comment:<br></label>
-                        <textarea name="comment" id="comment" placeholder="write your comment here..." rows="5" cols="40"></textarea>
-                        <br>
-                        <input type="checkbox" name="agree" id="agree" value="agree" required>
-                        <label for="agree">I agree to the platform's publishing rules.</label>
-                        <br>
-                        <input type="submit" value="Submit Review">
-                    </form>
+                    <form action="" method="post" class="form-border">
+                        <div class="form">
+                            <div class="name-gr">
+                                <label for="name" class="name-label">Enter your name</label>
+                                <input type="text" name="name" id="name" placeholder="enter your name" required>
+                            </div>
+                            <div class="email-gr">
+                                <label for="e-mail" class="email-label">E-mail</label>
+                                <input type="email" name="email" id="e-mail" placeholder="Enter your email">
+                            </div>
+                            <div class="rating-gr">
+                                <label class="rating-label">Rating:</label>
+                                <div class="radio-opt-1">
+                                    <input type="radio" name="radio-opt" id="excellent" value="excellent"><label for="excellent">Excellent.</label>
+                                </div>
+                                <div class="radio-opt-2">
+                                    <input type="radio" name="radio-opt" id="good" value="good"><label for="good">Good.</label>
+                                </div>
+                                <div class="radio-opt-3">
+                                    <input type="radio" name="radio-opt" id="not-good" value="not-good"><label for="not-good">Needs improvements.</label>
+                                </div>
+                            </div>
+                            <div class="specialty-gr">
+                                <label for="specialty-list" class="specialty-label">Specialty:</label>
+                                <input 
+                                    list="specialty" 
+                                    name="specialty-list" 
+                                    id="specialty-list"
+                                    placeholder="write your specialty"
+                                >
+                                <datalist id="specialty">
+                                    <option value="Front-End Developer">Front-End Developer.</option>
+                                    <option value="Mechatronics Engineer">Mechatronics Engineer.</option>
+                                    <option value="System Designer">System Designer.</option>
+                                </datalist>
+                            </div>
+                            <div class="comment-gr">
+                                <label class="comment-label" for="comment">Write your comment:</label>
+                                <textarea name="comment" id="comment" placeholder="write your comment here..." rows="5" cols="40"></textarea>
+                            </div>          
+                            <div class="agree-gr">
+                                <input type="checkbox" name="agree" id="agree" value="agree" required>
+                                <label for="agree">I agree to the platform's publishing rules.</label>
+                            </div>
+                            <div class="submit-button">
+                                <input type="submit" value="Submit Review">
+                            </div>
+                            
+                        </div>  
+                    </form>                  
                 </aside>
-                <section id="contact">
-                    <h3>Contact Us:</h3>
-                    <a href="https://www.github.com/momenabdelhady16" target="_blank">
-                        <img src="https://media.licdn.com/dms/image/v2/D4D12AQH5AQC9TXxYkw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1726897313436?e=2147483647&v=beta&t=jb4djqtMk72evJrNUfmpML9usqbI_OJUc2Tp3Hgx7Oc" alt="github" width="100">
-                    </a>
-                    <a href="mailto:momen.abdelhady16@gmail.com" target="_blank">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTytGf2CxnFAPXX8zIwwAqadt9dIms4MJNoQGTm4oLP5w&s" alt="gmail" width="40">
-                    </a>
-                </section>
             </section>
         </main>
         <!-- here is the footer of the page -->
         <footer>
-            <p>Copyright &copy; 2026 Pixel Valley Studio - Developed by Momen T. Abd-Elhady.</p>
+            <section class="contacts" id="contact">
+                    <!-- <h3>Contact Us:</h3> -->
+                    <a href="https://www.github.com/momenabdelhady16" target="_blank" >
+                        <img src="images/github.svg" alt="github" class="contact-img">
+                    </a>
+                    <a href="mailto:momen.abdelhady16@gmail.com" target="_blank">
+                        <img src="images/gmail.svg" alt="gmail" class="contact-img">
+                    </a>
+                </section>
+            <p class="footer-p">Copyright &copy; 2026 Pixel Valley Studio - Developed by Momen T. Abd-Elhady.</p>
         </footer>
 
     </body>
